@@ -1,0 +1,141 @@
+<aside>
+  {{#with perfil}}
+  <section id='perfil'>
+    <img src='/assets/fotoDePerfil.png' alt='Imagem de Perfil' />
+    <h1>{{name}}</h1>
+    <p>{{ocapation}}</p>
+  </section>
+  {{/with}}
+  {{#with info}}
+  <section id='info'>
+    <div class='infos'>
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-map-pin'>
+        <path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path>
+        <circle cx='12' cy='10' r='3'></circle>
+      </svg>
+      <p>{{localization}}</p>
+    </div>
+    <div class='infos'>
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-github'>
+        <path d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22'></path>
+      </svg>
+      <p>{{github}}</p>
+    </div>
+    <div class='infos'>
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-globe'>
+        <circle cx='12' cy='12' r='10'></circle>
+        <line x1='2' y1='12' x2='22' y2='12'></line>
+        <path d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'></path>
+      </svg>
+      <p>{{personalWebsite}}</p>
+    </div>
+    <div class='infos'>
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'>
+        <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path>
+        <polyline points='22,6 12,13 2,6'></polyline>
+      </svg>
+      <p>{{email}}</p>
+    </div>
+  </section>
+  {{/with}}
+  <section id='technologies'>
+    <h2>Tecnologias</h2>
+    <div id='grid-technologies'>
+      {{#each technologies}}
+      <p class='technology'>{{this}}</p>
+      {{/each}}
+    </div>
+  </section>
+  <section id='experience'>
+    <h2>Experiências</h2>
+    <ul>
+      {{#each experience}}
+      <li>
+        <p class='title'>{{this.title}}</p>
+        <p class='date'>{{this.date}}</p>
+        <p class='local'>{{this.local}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </section>
+  <section id='education'>
+    <h2>Educação</h2>
+    <ul>
+      {{#each education}}
+      <li>
+        <p class='title'>{{this.title}}</p>
+        <p class='date'>{{this.date}}</p>
+        <p class='course'>{{this.course}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </section>
+</aside>
+<div id='main'>
+  <article id='projects'>
+    <section class='header'>
+      <h1>Meus Projetos</h1>
+      <a href='https://github.com/JonathanPR0?tab=repositories'>Veja mais</a>
+    </section>
+    {{#each projects}}
+    <a href='{{this.link}}'>
+      <section class='project'>
+        <div class='project-header'>
+          <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-folder'>
+            <path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z'></path>
+          </svg>
+          <p>{{this.name}}</p>
+        </div>
+        <p class="project-description">{{this.description}}</p>
+        <div class='project-footer'>
+          <div class='project-info'>
+            <div class='info-stars'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-star'>
+                <polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'></polygon>
+              </svg>
+              <p>{{this.randomNumber}}</p>
+            </div>
+            <div class='info-branch'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-git-branch'>
+                <line x1='6' y1='3' x2='6' y2='15'></line>
+                <circle cx='18' cy='6' r='3'></circle>
+                <circle cx='6' cy='18' r='3'></circle>
+                <path d='M18 9a9 9 0 0 1-9 9'></path>
+              </svg>
+              <p>{{this.randomNumber}}</p>
+            </div>
+          </div>
+          <div class='project-language'>
+            <div class='language-color' style='background-color:{{this.languageColor}}; height: 15px; width: 15px; border: 2px solid #837E9F; border-radius: 50%'></div>
+            <p class='language'>{{this.language}}</p>
+          </div>
+        </div>
+      </section>
+    </a>
+
+      {{/each}}
+  </article>
+
+  <article id='posts'>
+    <section class='header'>
+      <h1>Posts Recentes</h1>
+    </section>
+    {{#each posts}}
+    <a href='/'>
+      <section class='post'>
+        <img src='/assets/fotoDePerfil.png' alt='Perfil' />
+        <div class='post-header'>
+          <h3>{{this.title}}</h3>
+          <p>{{this.time}}</p>
+        </div>
+        <div class='post-footer'>
+          <p>{{this.description}}</p>
+          {{#each this.hashtags}}
+          <p class="hashtag">{{this}}</p>
+          {{/each}}
+        </div>
+      </section>
+      </section>
+      {{/each}}
+  </article>
+</div>
