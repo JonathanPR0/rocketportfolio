@@ -1,5 +1,6 @@
 # Portfolio
-<!-- <img src="http://"> -->
+
+<img src="./public/assets/animation.gif">
 
 Esse portifólio foi desenvolvido levando em consideração os dados de estilização fornecidos no desafio "Portfolio" da Rocketseat. Ele vai um pouco mais além, fazendo uso não apenas do HTML e do CSS como também de JavaScript e Node.js, o que tornou o projeto mais dinâmico
 
@@ -28,6 +29,7 @@ $ npm start
 ```
 
 ### 😀 Autor
+
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/75747829?v=4" width="100px;" alt="Jonathan"/>
 
 Feito por Jonathan Amarante 👋🏽 Entre em contato!
