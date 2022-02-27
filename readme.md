@@ -2,7 +2,7 @@
 
 <img src="./public/assets/animation.gif">
 
-Esse portifólio foi desenvolvido levando em consideração os dados de estilização fornecidos no desafio "Portfolio" da Rocketseat. Ele vai um pouco mais além, fazendo uso não apenas do HTML e do CSS como também de JavaScript e Node.js, o que tornou o projeto mais dinâmico
+Esse portifólio foi desenvolvido levando em consideração os dados de estilização fornecidos no desafio "Portfolio" da **Rocketseat**. Ele vai um pouco mais além, fazendo uso não apenas do _HTML_ e do _CSS_ como também de _JavaScript_ e _Node.js_, o que tornou o projeto mais dinâmico
 
 ### 👨‍💻 Tecnologias
 
